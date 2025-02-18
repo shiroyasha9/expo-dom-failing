@@ -1,0 +1,35 @@
+{
+	"cli": {
+		"version": ">= 14.2.0",
+		"appVersionSource": "remote"
+	},
+	"build": {
+		"development-simulator": {
+			"bun": "1.1.40",
+			"developmentClient": true,
+			"distribution": "internal",
+			"ios": {
+				"simulator": true
+			}
+		},
+		"development": {
+			"bun": "1.1.40",
+			"developmentClient": true,
+			"distribution": "internal"
+		},
+		"preview": {
+			"bun": "1.1.40",
+			"distribution": "internal",
+			"android": {
+				"buildType": "apk"
+			}
+		},
+		"production": {
+			"bun": "1.1.40",
+			"autoIncrement": true
+		}
+	},
+	"submit": {
+		"production": {}
+	}
+}
